@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  server:
+    image: maxpaqzrio/server
+    build: ./server
+    ports:
+    - 4040:4040
+      
+  client:
+    image: maxpaqzrio/client
+    build: ./client
+    ports:
+    - 8080:8080
+      
